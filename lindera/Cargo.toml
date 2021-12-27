@@ -8,7 +8,7 @@ authors = [
     "ikawaha",
     "Tomoko Uchida <tomoko.uchida.1111@gmail.com>"
     ]
-edition = "2018"
+edition = "2021"
 description = "A morphological analysis library."
 documentation = "https://docs.rs/lindera"
 homepage = "https://github.com/lindera-morphology/lindera"
@@ -19,7 +19,8 @@ categories = ["text-processing"]
 license = "MIT"
 
 [features]
-smallbinary = ["lindera-ipadic-builder/compress", "lindera-ipadic/smallbinary"]
+smallbinary = ["lindera-ipadic/smallbinary"]
+default = ["lindera-ipadic/default"]
 
 [dependencies]
 anyhow = "1.0"
@@ -31,11 +32,8 @@ serde_json = "1.0"
 
 lindera-core = { version = "0.8.1", path = "../lindera-core" }
 lindera-dictionary = { version = "0.8.1", path = "../lindera-dictionary" }
-lindera-ipadic = { version = "0.8.1", path = "../lindera-ipadic" }
-lindera-ipadic-builder = { version = "0.8.1", path = "../lindera-ipadic-builder", default-features = false }
-
-[build-dependencies]
-lindera-ipadic-builder = { version = "0.8.1", path = "../lindera-ipadic-builder" }
+lindera-ipadic = { version = "0.8.1", path = "../lindera-ipadic", default-features = false }
+lindera-ipadic-builder = { version = "0.8.1", path = "../lindera-ipadic-builder"}
 
 [dev-dependencies]
 criterion = "0.3"

@@ -7,7 +7,7 @@ authors = [
     "Jun Ohtani <johtani@gmail.com>",
     "Tomoko Uchida <tomoko.uchida.1111@gmail.com>"
     ]
-edition = "2018"
+edition = "2021"
 description = "A morphological dictionary loader."
 documentation = "https://docs.rs/lindera-dictionary"
 homepage = "https://github.com/lindera-morphology/lindera"

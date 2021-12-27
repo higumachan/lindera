@@ -1,5 +1,5 @@
 [package]
-name = "lindera-ipadic-builder"
+name = "lindera-ipadic-builder-compress"
 version = "0.8.1"
 authors = [
     "Paul Masurel <paul.masurel@gmail.com>",
@@ -29,11 +29,4 @@ yada = "0.5"
 
 lindera-core = { version = "0.8.1", path = "../lindera-core" }
 lindera-decompress = { path = "../lindera-decompress" }
-
-[[bin]]
-name = "lindera-ipadic-builder"
-path = "src/main.rs"
-
-[[bin]]
-name = "lindera-userdic-builder"
-path = "src/bin/lindera-userdic-builder/main.rs"
+lindera-compress = { path = "../lindera-compress" }

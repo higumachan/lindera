@@ -7,7 +7,7 @@ authors = [
     "Tomoko Uchida <tomoko.uchida.1111@gmail.com>",
     "Jun Ohtani <johtani@gmail.com>"
     ]
-edition = "2018"
+edition = "2021"
 description = "A Japanese morphological dictionary loader for IPADIC."
 documentation = "https://docs.rs/lindera-ipadic"
 homepage = "https://github.com/lindera-morphology/lindera"
@@ -18,7 +18,8 @@ categories = ["text-processing"]
 license = "MIT"
 
 [features]
-smallbinary = ["lindera-ipadic-builder/compress", "lindera-decompress"]
+smallbinary = ["lindera-decompress", "lindera-ipadic-builder-compress"]
+default = ["lindera-ipadic-builder"]
 
 [dependencies]
 bincode = "1.3"
@@ -36,4 +37,5 @@ encoding = "0.2"
 tokio = { version = "1.9", features = ["full"] }
 
 lindera-core = { version = "0.8.1", path = "../lindera-core" }
-lindera-ipadic-builder = { version = "0.8.1", path = "../lindera-ipadic-builder"}
+lindera-ipadic-builder = { version = "0.8.1", path = "../lindera-ipadic-builder", optional = true}
+lindera-ipadic-builder-compress = { version = "0.8.1", path = "../lindera-ipadic-builder-compress", optional = true}

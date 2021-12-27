@@ -13,7 +13,11 @@ use tokio::fs::File;
 use tokio::io::{AsyncReadExt, AsyncWriteExt};
 
 use lindera_core::dictionary_builder::DictionaryBuilder;
+
+#[cfg(not(feature = "smallbinary"))]
 use lindera_ipadic_builder::ipadic_builder::IpadicBuilder;
+#[cfg(feature = "smallbinary")]
+use lindera_ipadic_builder_compress::ipadic_builder::IpadicBuilder;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error>> {

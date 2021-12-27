@@ -7,7 +7,7 @@ authors = [
     "Tomoko Uchida <tomoko.uchida.1111@gmail.com>",
     "Jun Ohtani <johtani@gmail.com>"
     ]
-edition = "2018"
+edition = "2021"
 description = "A morphological analysis core library."
 documentation = "https://docs.rs/lindera-core"
 homepage = "https://github.com/lindera-morphology/lindera"

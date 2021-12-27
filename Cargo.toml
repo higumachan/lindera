@@ -2,6 +2,7 @@
 members = [
     "lindera-core",
     "lindera-ipadic-builder",
+    "lindera-ipadic-builder-compress",
     "lindera-dictionary",
     "lindera-ipadic",
     "lindera",

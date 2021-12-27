@@ -8,4 +8,5 @@ perf.data*
 Cargo.lock
 
 lindera-ipadic-*-*
+!lindera-ipadic-builder-compress
 mecab-ipadic-*-*
